@@ -1,6 +1,8 @@
 import wikipedia
 from textblob import TextBlob
 import arxivscraper
+import pandas as pd
+
 
 def wiki(name="Duke University", length=3):
     """This is a wikipedia fetcher for the basic information of reseach"""
@@ -25,6 +27,8 @@ def arxivscraper(name):
     """Search for something you are interested at Arxiv"""
     scraper = arxivscraper.Scraper(category=name, date_from='2017-05-27',date_until='2017-06-07')
     output = scraper.scrape()
-    return output
+    cols = ('id', 'title', 'categories', 'abstract', 'doi', 'created', 'updated', 'authors')
+    df = pd.DataFrame(output,columns=cols)
+    return df
 
 

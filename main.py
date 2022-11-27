@@ -3,7 +3,7 @@ import uvicorn
 from mylibrary.logic import search_wiki as wikisearch
 from mylibrary.logic import wiki as wikiintro
 from mylibrary.logic import phrase as wikiphrases
-from mylibrary.logic import arxivscraper
+from mylibrary.logic import arxivscraper as arx
 
 
 app = FastAPI()
@@ -37,9 +37,9 @@ async def phrase(name: str):
 
 @app.get("/arxivscraper/{name}")
 async def arxivscraper(name: str):
-    """Retrieve the basic introduction at wikipedia"""
+    """Retrieve the basic introduction at Arxiv"""
 
-    result = arxivscraper(name)
+    result = arx(name)
     return {"result": result}
 
 if __name__ == "__main__":
