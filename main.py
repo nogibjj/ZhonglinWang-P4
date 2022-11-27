@@ -3,9 +3,7 @@ import uvicorn
 from mylibrary.logic import search_wiki as wikisearch
 from mylibrary.logic import wiki as wikiintro
 from mylibrary.logic import phrase as wikiphrases
-# from mylibrary.logic import arxivscraper as arx
-import arxivscraper
-import pandas as pd
+from mylibrary.logic import arxivscraper as arxx
 
 
 app = FastAPI()
@@ -37,25 +35,13 @@ async def phrase(name: str):
     result = wikiphrases(name)
     return {"result": result}
 
-# @app.get("/arxivscraper/{name}")
-# async def arxivscraper(name: str):
-#     """Retrieve the basic introduction at Arxiv"""
-
-#     result = arx(name)
-#     return {"result": result}
-
 @app.get("/arx/{name}")
 async def arxivscraper(name: str):
     """Retrieve the basic introduction at Arxiv"""
-    scraper = arxivscraper.Scraper(category=name, date_from='2017-05-27',date_until='2017-06-07')
-    output = scraper.scrape()
-    cols = ('id', 'title', 'categories', 'abstract', 'doi', 'created', 'updated', 'authors')
-    df = pd.DataFrame(output,columns=cols)
-    return {"result": df}
+    result = arxx(name)
+    return {"result": result}
+
 
 """Search for something you are interested at Arxiv"""
-    
-
-    
 if __name__ == "__main__":
     uvicorn.run(app, port=8080, host="0.0.0.0")

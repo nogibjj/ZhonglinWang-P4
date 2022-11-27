@@ -23,7 +23,7 @@ def phrase(name):
     blob = TextBlob(page)
     return blob.noun_phrases
 
-def arxivscraper(name):
+def arxivscraper(name="cs"):
     """Search for something you are interested at Arxiv"""
     scraper = arxivscraper.Scraper(category=name, date_from='2017-05-27',date_until='2017-06-07')
     output = scraper.scrape()
