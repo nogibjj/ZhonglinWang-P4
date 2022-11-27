@@ -2,7 +2,7 @@ import arxivscraper
 import pandas as pd
 
 
-def arxiv(name="astro-ph"):
+def arxiv(name):
     """Search for something you are interested at Arxiv"""
     scraper = arxivscraper.Scraper(category=name, date_from='2022-05-27',date_until='2022-06-07')
     output = scraper.scrape()
