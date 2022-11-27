@@ -3,10 +3,11 @@ Project #4: Continuous Delivery of FastAPI API hosted on AWS
 
 Perform Continuous Integration with Github Actions  
 
-## 1. Distribute microservices using FastAPI 
+## 1. Deploy microservices using FastAPI 
 Define Arxivscraper function that gets papers published on Arxiv from 2022-05-27 to 2022-06-07 (the interval can be changed anytime)
 <img width="809" alt="image" src="https://user-images.githubusercontent.com/112585430/204144434-1efbbcc0-128c-42bb-bbcd-140d2854af4b.png"> 
-
+Then use FastAPI to build an Arxiv article searcher checking with command `python main.py` 
+<img width="733" alt="image" src="https://user-images.githubusercontent.com/112585430/204144629-13270a38-063e-4476-b79b-708990f3a83d.png"> 
 
 
 ## 2. Create Docker Image
