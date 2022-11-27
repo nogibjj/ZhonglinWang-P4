@@ -12,4 +12,8 @@ Perform Continuous Integration with Github Actions
 
 <img width="721" alt="image" src="https://user-images.githubusercontent.com/112585430/204142999-671e7aae-dbd4-4593-a298-1693d5736529.png"> 
 
+`docker run -p 127.0.0.1:8080:8080 b8d6c01d8a3d` 
+
+<img width="721" alt="image" src="https://user-images.githubusercontent.com/112585430/204143816-3baa62f9-47b2-4890-9396-2de2bcad6560.png"> 
+
 1
