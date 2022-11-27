@@ -14,7 +14,9 @@ Then use FastAPI to build an Arxiv article searcher checking with command `pytho
 
 `python main.py` 
 
-<img width="1366" alt="image" src="https://user-images.githubusercontent.com/112585430/204164891-e9374837-5a7e-4ede-990e-b54a53d04e81.png">
+<img width="1366" alt="image" src="https://user-images.githubusercontent.com/112585430/204164891-e9374837-5a7e-4ede-990e-b54a53d04e81.png"> 
+click 
+
 <img width="1728" alt="image" src="https://user-images.githubusercontent.com/112585430/204164933-cf61ce02-b228-4d1f-850b-3a181128f580.png">
 
 ## 3. Create Docker Image
