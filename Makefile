@@ -22,9 +22,9 @@ run:
 	
 deploy:
 	#pushes container to ECR
-	aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 894437926398.dkr.ecr.us-east-2.amazonaws.com
-	docker build -t wiki-fastapi .
-	docker tag wiki-fastapi:latest 894437926398.dkr.ecr.us-east-2.amazonaws.com/wiki-fastapi:latest
-	docker push 894437926398.dkr.ecr.us-east-2.amazonaws.com/wiki-fastapi:latest
+	aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 766481746749.dkr.ecr.us-east-1.amazonaws.com
+	docker build -t arxiv .
+	docker tag arxiv:latest 766481746749.dkr.ecr.us-east-1.amazonaws.com/arxiv:latest
+	docker push 766481746749.dkr.ecr.us-east-1.amazonaws.com/arxiv:latest
 
 all: install post-install lint test deploy
