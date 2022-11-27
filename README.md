@@ -15,9 +15,15 @@ Then use FastAPI to build an Arxiv article searcher checking with command `pytho
 `python main.py` 
 
 <img width="1366" alt="image" src="https://user-images.githubusercontent.com/112585430/204164891-e9374837-5a7e-4ede-990e-b54a53d04e81.png"> 
-click 
+click"Open in Browser" 
 
-<img width="1728" alt="image" src="https://user-images.githubusercontent.com/112585430/204164933-cf61ce02-b228-4d1f-850b-3a181128f580.png">
+<img width="1728" alt="image" src="https://user-images.githubusercontent.com/112585430/204164933-cf61ce02-b228-4d1f-850b-3a181128f580.png"> 
+type /docs after .dev in the URL bar 
+
+<img width="1422" alt="image" src="https://user-images.githubusercontent.com/112585430/204165004-9669b6a3-8bba-480e-8cc8-9fed428ca669.png"> 
+
+Try it out by enter "physics:nucl-th" to see the collection of Nuclear Theory papers published on Arxiv through 2022-05-27 to 2022-06-07.  
+<img width="1422" alt="image" src="https://user-images.githubusercontent.com/112585430/204165156-997c89d7-112d-4dbc-b457-a586510f287d.png">
 
 ## 3. Create Docker Image
 `docker build -t deploy-fastapi .` 
