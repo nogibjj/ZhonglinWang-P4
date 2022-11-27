@@ -26,5 +26,6 @@ deploy:
 	docker build -t arxiv .
 	docker tag arxiv:latest 766481746749.dkr.ecr.us-east-1.amazonaws.com/arxiv:latest
 	docker push 766481746749.dkr.ecr.us-east-1.amazonaws.com/arxiv:latest
+	docker login -u AWS -p $(aws ecr get-login-password --region the-region-you-are-in) xxxxxxxxx.dkr.ecr.the-region-you-are-in.amazonaws.com
 
 all: install post-install lint test deploy
