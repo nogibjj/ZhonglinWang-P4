@@ -9,3 +9,4 @@ uvicorn==0.17.6
 textblob==0.17.1
 biopython
 arxivscraper
+pandas
