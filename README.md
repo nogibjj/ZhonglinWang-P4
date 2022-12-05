@@ -37,3 +37,8 @@ Try it out by enter "physics:nucl-th" to see the collection of Nuclear Theory pa
 `docker run -p 127.0.0.1:8080:8080 b8d6c01d8a3d` 
 
 <img width="721" alt="image" src="https://user-images.githubusercontent.com/112585430/204143816-3baa62f9-47b2-4890-9396-2de2bcad6560.png"> 
+
+revise workflow and rebuild action
+
+<img width="1182" alt="image" src="https://user-images.githubusercontent.com/112585430/205670667-ef46a894-94cf-4998-8d3f-3dc8beae8a79.png">
+
